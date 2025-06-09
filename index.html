@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Simulator</title>
+  <script type="module" crossorigin src="/sc0v5_-vector-decomposition-into-components/assets/index--a01HCAn.js"></script>
+  <link rel="stylesheet" crossorigin href="/sc0v5_-vector-decomposition-into-components/assets/index-CZsQSdU3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vector Simulator</h1>
+        </header>
+
+        <main class="content-wrapper">
+            <div class="controls-panel">
+                <h2>Controls</h2>
+                <div class="form-group">
+                    <label for="mode">Mode:</label>
+                    <input type="radio" id="mode2D" name="mode" value="2D" checked>
+                    <label for="mode2D">2D</label>
+                    <input type="radio" id="mode3D" name="mode" value="3D">
+                    <label for="mode3D">3D</label>
+                </div>
+                <div class="form-group">
+                    <label for="ax">Ax (i-component):</label>
+                    <input type="number" id="ax" value="2" aria-label="X-component of the vector">
+                </div>
+                <div class="form-group">
+                    <label for="ay">Ay (j-component):</label>
+                    <input type="number" id="ay" value="2" aria-label="Y-component of the vector">
+                </div>
+                <div class="form-group" id="az-group">
+                    <label for="az">Az (k-component):</label>
+                    <input type="number" id="az" value="1" aria-label="Z-component of the vector">
+                </div>
+                <button id="drawVectorBtn" aria-label="Draw vector on canvas">Draw Vector</button>
+                <div id="vectorEquation" class="vector-equation-display" aria-live="polite">Vector A = 2i + 2j</div>
+            </div>
+
+            <div class="visualization-panel">
+                <h2>Vector Visualization</h2>
+                <canvas id="vectorCanvas" width="400" height="400" aria-label="Canvas displaying the vector and its components"></canvas>
+            </div>
+        </main>
+
+        <section class="explanation-section">
+            <h2>Explanation of Vector Components</h2>
+            <ul id="explanationPoints">
+                <li>Vectors can be represented through their components.</li>
+                <li>A vector A can be decomposed into its components in the x and y-directions (and z-direction for 3D).</li>
+                <li>This is equivalent to finding the projections of vector A along the x, y (and z) axes.</li>
+                <li>2D Vector: A = Ax * i_hat + Ay * j_hat (where i_hat and j_hat are unit vectors along x and y).</li>
+                <li>3D Vector: A = Ax * i_hat + Ay * j_hat + Az * k_hat (where k_hat is the unit vector along z).</li>
+                <li>Vectors can be drawn anywhere; they don't have to start at the origin (though this simulator draws them from the origin for clarity).</li>
+            </ul>
+        </section>
+
+        <section class="examples-section">
+            <h2>Example Scenarios</h2>
+            <p>Click an example to load and draw the vector:</p>
+            <div id="exampleButtonsContainer">
+                <!-- Example buttons will be added here by JS -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Vector Simulator - Learn about vector components interactively.</p>
+        </footer>
+    </div>
+</body>
+</html>
