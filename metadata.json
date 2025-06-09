@@ -1,0 +1,6 @@
+{
+  "name": "SC0v5: Vector Decomposition into components",
+  "description": "Start of transcript. Skip to the end.\nVectors can be represented through their components.\nIf we have a vector A, we can decompose it\ninto its components in the x and y-directions\nby finding the vectors, one along x and one along y,\nthat add up to the vector A. This\nis the same thing as finding the projections of the vector A\nalong the x and y-axes.\nHere is the projection of the vector\nonto the x-axis, its x-component.\nAnd here is the projection onto the y-axis, the y-component.\nThis particular vector could be written\nas A is equal to minus 2i hat plus minus 2j hat.\nA generic vector in two dimensions\ncan be written as A is equal to Ax, the x-component of A,\ntimes i hat, the unit vector along x, plus Ay,\nthe y-component, times j hat, the unit vector along y.\nIf the vector is in three dimensions,\nwe will also have an Az times k hat.\nWhat if we have the vector minus 3i hat plus 2j hat?\nFirst we find the vector minus 3 times vector i hat\nand add this to the vector 2 times j hat.\nWe can draw this vector anywhere.\nIt doesn't have to start at the origin.\nEnd of transcript. Skip to the start",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

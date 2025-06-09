@@ -1,0 +1,172 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.controls-panel, .visualization-panel {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+}
+
+.controls-panel {
+    flex: 1; /* Takes up 1 part of space */
+    min-width: 280px; /* Minimum width before wrapping */
+}
+
+.visualization-panel {
+    flex: 2; /* Takes up 2 parts of space */
+    min-width: 400px; /* Minimum width for canvas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls-panel h2, .visualization-panel h2, .explanation-section h2, .examples-section h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: inline-block; /* Changed from block for radio button alignment */
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+.form-group input[type="radio"] + label {
+    font-weight: normal; /* Radio labels normal weight */
+    margin-right: 10px;
+}
+
+
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button#drawVectorBtn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button#drawVectorBtn:hover {
+    background-color: #2980b9;
+}
+
+.vector-equation-display {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#vectorCanvas {
+    border: 1px solid #95a5a6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    max-width: 100%; /* Ensure canvas is responsive within its container */
+}
+
+.explanation-section, .examples-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.explanation-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.explanation-section ul li {
+    margin-bottom: 8px;
+}
+
+#exampleButtonsContainer button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#exampleButtonsContainer button:hover {
+    background-color: #16a085;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #bdc3c7;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .controls-panel, .visualization-panel {
+        min-width: 100%; /* Full width on smaller screens */
+    }
+}
